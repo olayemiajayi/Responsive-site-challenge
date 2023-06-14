@@ -7,21 +7,41 @@
   color: #ffff;
   letter-spacing: 5px;
 }
-p {
+.headers {
   font-family: "Dancing Script", cursive;
   text-align: center;
   font-size: 30px;
   color: #ffff;
   padding: 20px;
 }
+
 footer {
-  text-align: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(https://secure.cdn1.wdpromedia.com/dam/disney-cruise-line/home/hero/024ZR_1782AS_ATG0427-tint-16x9.jpg);
+  background-position: center;
+  background-size: cover;
   font-size: 18px;
   font-style: italic;
   padding: 20px;
 }
+footer li {
+  list-style-type: none;
+}
+footer a {
+  text-decoration: none;
+  color: #bae8e8;
+}
+footer h3 {
+  font-size: 20px;
+  color: #ffff;
+}
+footer p {
+  font-family: "Lora", serif;
+  font-size: 18px;
+  color: #bae8e8;
+}
 .front {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
     url(https://www.telegraph.co.uk/content/dam/eip/walt-disney-world/magic-kingdom.jpg?imwidth=680);
   background-size: cover;
   background-repeat: no-repeat;
