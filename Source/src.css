@@ -10,7 +10,7 @@
 .headers {
   font-family: "Dancing Script", cursive;
   text-align: center;
-  font-size: 30px;
+  font-size: 40px;
   color: #ffff;
   padding: 20px;
 }
@@ -20,6 +20,7 @@
 }
 .grid-2-columns {
   grid-template-columns: 1fr 1fr;
+  padding: 80px;
 }
 .grid-3-columns-with-first-narrow {
   grid-template-columns: 1fr 4fr;
@@ -34,13 +35,41 @@
   left: 2px;
   top: 1px;
 }
+.embeds {
+  width: 100%;
+  aspect-ratio: 20/9;
+  padding: 4px;
+}
+.card {
+  margin: 0 auto;
+  margin-left: 10px;
+  margin-bottom: 50px;
+}
+.video {
+  opacity: 0.3;
+  text-align: center;
+  font-size: 30px;
+  font-family: "Bitter", serif;
+  letter-spacing: 2px;
+  padding: 20px;
+}
+.grid-2-columns img {
+  display: block;
+  width: 100%;
+  height: 400px;
+}
 main {
   margin: 0 auto;
-  padding: 20px;
+  padding: 18px;
 }
 main p {
   font-family: "Lora", serif;
-  font-size: 20px;
+  font-size: 30px;
+  padding-left: 30px;
+}
+.board {
+  border: 1px solid #e0e0e0;
+  background-color: #e0e0e0;
 }
 footer {
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
@@ -86,6 +115,7 @@ footer p {
   .headers {
     margin: 0 auto;
     padding: 10px;
+    font-size: 20px;
   }
   .footer {
     margin: 0 auto;
@@ -93,5 +123,12 @@ footer p {
   }
   .grid {
     grid-template-columns: 1fr;
+  }
+  .grid-2-columns p {
+    font-size: 12px;
+    text-align: center;
+  }
+  .img-fluid {
+    max-width: 3000px;
   }
 }
