@@ -14,7 +14,34 @@
   color: #ffff;
   padding: 20px;
 }
-
+.grid {
+  display: grid;
+  grid-gap: 10px;
+}
+.grid-2-columns {
+  grid-template-columns: 1fr 1fr;
+}
+.grid-3-columns-with-first-narrow {
+  grid-template-columns: 1fr 4fr;
+}
+.grid a {
+  position: relative;
+  right: 30px;
+  font-size: 18px;
+}
+.github {
+  position: relative;
+  left: 2px;
+  top: 1px;
+}
+main {
+  margin: 0 auto;
+  padding: 20px;
+}
+main p {
+  font-family: "Lora", serif;
+  font-size: 20px;
+}
 footer {
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
     url(https://secure.cdn1.wdpromedia.com/dam/disney-cruise-line/home/hero/024ZR_1782AS_ATG0427-tint-16x9.jpg);
@@ -30,6 +57,7 @@ footer li {
 footer a {
   text-decoration: none;
   color: #bae8e8;
+  font-size: 12px;
 }
 footer h3 {
   font-size: 20px;
@@ -40,6 +68,7 @@ footer p {
   font-size: 18px;
   color: #bae8e8;
 }
+
 .front {
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
     url(https://www.telegraph.co.uk/content/dam/eip/walt-disney-world/magic-kingdom.jpg?imwidth=680);
@@ -47,8 +76,22 @@ footer p {
   background-repeat: no-repeat;
   background-position: center;
   height: 500px;
-  max-width: 90%;
-  margin: 10px;
-  margin-left: 70px;
   border-radius: 10px;
+}
+@media (max-width: 800px) {
+  .front {
+    text-align: center;
+    margin: 0 auto;
+  }
+  .headers {
+    margin: 0 auto;
+    padding: 10px;
+  }
+  .footer {
+    margin: 0 auto;
+    padding: 10px;
+  }
+  .grid {
+    grid-template-columns: 1fr;
+  }
 }
