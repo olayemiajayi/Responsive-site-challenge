@@ -57,6 +57,7 @@
   display: block;
   width: 100%;
   height: 400px;
+  filter: brightness(93%) contrast(101%) hue-rotate(28deg);
 }
 main {
   margin: 0 auto;
